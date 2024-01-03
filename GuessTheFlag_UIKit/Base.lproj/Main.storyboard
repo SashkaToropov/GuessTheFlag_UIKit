@@ -16,24 +16,33 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p8p-Hp-RQg">
-                                <rect key="frame" x="159" y="100" width="200" height="100"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p8p-Hp-RQg">
+                                <rect key="frame" x="96.666666666666686" y="100" width="200" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="p8p-Hp-RQg" secondAttribute="height" multiplier="2:1" id="4dB-gt-21l"/>
+                                </constraints>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" image="us"/>
                                 <connections>
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ufk-Lh-vZR"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="1" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6ob-vn-bCs">
-                                <rect key="frame" x="159" y="230" width="200" height="100"/>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6ob-vn-bCs">
+                                <rect key="frame" x="96.666666666666686" y="230" width="200" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="6ob-vn-bCs" secondAttribute="height" multiplier="2:1" id="6Vr-U3-d2M"/>
+                                </constraints>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" image="us"/>
                                 <connections>
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xZ3-sq-8DK"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="2" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UPY-2e-Stg">
-                                <rect key="frame" x="159" y="360" width="200" height="100"/>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UPY-2e-Stg">
+                                <rect key="frame" x="96.666666666666686" y="360" width="200" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="UPY-2e-Stg" secondAttribute="height" multiplier="2:1" id="JiP-X9-ZSK"/>
+                                </constraints>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" image="us"/>
                                 <connections>
@@ -44,11 +53,14 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="UPY-2e-Stg" secondAttribute="bottom" constant="20" id="4Fy-87-vLQ"/>
+                            <constraint firstItem="UPY-2e-Stg" firstAttribute="height" secondItem="6ob-vn-bCs" secondAttribute="height" id="9uc-Sj-8TS"/>
                             <constraint firstItem="6ob-vn-bCs" firstAttribute="centerX" secondItem="p8p-Hp-RQg" secondAttribute="centerX" id="BWl-cP-ogg"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="top" secondItem="p8p-Hp-RQg" secondAttribute="top" constant="3" id="EWL-2c-eSO"/>
                             <constraint firstItem="UPY-2e-Stg" firstAttribute="top" secondItem="6ob-vn-bCs" secondAttribute="bottom" constant="30" id="HrG-fe-Cel"/>
                             <constraint firstItem="6ob-vn-bCs" firstAttribute="top" secondItem="p8p-Hp-RQg" secondAttribute="bottom" constant="30" id="MDy-zl-441"/>
                             <constraint firstItem="UPY-2e-Stg" firstAttribute="centerX" secondItem="6ob-vn-bCs" secondAttribute="centerX" id="P8T-y6-qk1"/>
+                            <constraint firstItem="6ob-vn-bCs" firstAttribute="height" secondItem="p8p-Hp-RQg" secondAttribute="height" id="a9Q-kN-h7U"/>
                             <constraint firstItem="p8p-Hp-RQg" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="lqM-J8-BG3"/>
                         </constraints>
                     </view>
